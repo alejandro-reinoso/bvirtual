@@ -61,7 +61,7 @@ $map->post('guardarContacto', '/bvirtual/guardarContacto',[
 ]);
 ```
 
-####Configurar los htacces, estos archivos git no me los permite subir así los escribo abajo tal cual indicando las rutas
+_Configurar los htacces, estos archivos git no me los permite subir así los escribo abajo tal cual indicando las rutas_
 
 _Carpeta raíz .htaccess_
 
