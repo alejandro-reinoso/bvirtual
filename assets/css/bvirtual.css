@@ -1,0 +1,86 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    text-align: center;
+    background-color: #e0e0e0;
+}
+img{
+    max-width: 100%;
+}
+.contenedor-principal{
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px 0px;
+    margin: 100px 8%;
+}
+input{
+    border-width: 0px 0px 1px 0px;
+    border-color: black;
+    padding: 0px 0px 2px 7px;
+    width: 39%;
+    margin: 20px 5%;
+}
+.btnEnviar{
+    background-color: #002d77;
+    color: white;
+    width: auto;
+    padding: 8px 10%;
+    border-radius: 5px;
+}
+
+/*
+tamanio fuetes
+ */
+body {font-size: 100%}
+
+h1 {font-size: 1.9em;}
+h2 {font-size: 1.7em;}
+p {font-size: 1.5em;}
+input {font-size: 1.3em;}
+
+
+@media (max-width: 987px) {
+    h1{
+        font-size: 2.3em;
+    }
+    h2{
+        font-size: 2.1em;
+    }
+    p{
+        font-size: 2em;
+    }
+    input {
+        font-size: 2em;
+        width: 80%;
+        margin-bottom: 50px;
+    }
+}
+
+.datoErroneo{
+    border-color: red;
+}
+
+.respuesta-negativa{
+    text-align: justify;
+    width: 90%;
+    padding: 15px;
+    margin-left: 5%;
+    background-color: #ff0000a8;
+    color: white;
+}
+
+.respuesta-afirmativa {
+    text-align: justify;
+    width: 90%;
+    padding: 15px;
+    margin-left: 5%;
+    background-color: #28d65c;
+    color: white;
+}
+
+article{
+    text-align: justify;
+    padding-left: 5%;
+    margin-bottom: 60px;
+}

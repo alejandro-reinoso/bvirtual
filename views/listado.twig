@@ -1,0 +1,23 @@
+{% extends "layout.twig" %}
+
+{% block metas %}
+    <title>Listado de Usuarios - Barcelona Virtual</title>
+    <meta name="description" content="En esta página se muestra el listado de usuarios de la prueba"/>
+{% endblock %}
+
+{% block sesionprincipal %}
+    <section>
+        <h1>Listado de usuarios</h1>
+        {% for contacto in contactos %}
+        <article>
+            <h2><u>{{ contacto.nombre }} {{ contacto.apellido }}</u></h2>
+            <p>Email: {{ contacto.email }}</p>
+            <p>DNI: {{ contacto.dni }}</p>
+            <p>Móvil: {{ contacto.movil }}</p>
+        </article>
+        {% endfor %}
+        <script src="assets/js/jquery-3.4.1.min.js">
+        </script>
+        <script src="assets/js/enviar.js"></script>
+    </section>
+{% endblock %}

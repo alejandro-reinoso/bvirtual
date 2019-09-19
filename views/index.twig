@@ -1,0 +1,40 @@
+{% extends "layout.twig" %}
+
+{% block metas %}
+    <title>Formulario - Barcelona Virtual</title>
+    <meta name="description" content="Desde esta página podrás añadir nuevos usuarios"/>
+{% endblock %}
+
+{% block sesionprincipal %}
+<section>
+    <p>Por favor, rellena los campos siguientes:</p>
+    <form action="guardarContacto" method="post" id="formulario">
+        <input id="nombre" name="nombre" type="text" placeholder="Nombre" />
+        <input id="apellido" name="apellido" type="text" placeholder="Apellido" />
+        <input id="email" name="email" type="email" placeholder="Email" />
+        <input id="email2" name="email2" type="email" placeholder="Repetir Email" />
+        <input id="dni" name="dni" type="text" placeholder="DNI" maxlength="9" onkeyup="this.value = this.value.toUpperCase();">
+        <input id="movil" name="movil" type="tel" placeholder="Móvil" maxlength="9"  />
+        <!-- Nota informativa para el revisor
+            Buenas se me ha pedido que realize las comprobaciones 100% en jquery así las haré, pero recomendaría hacer algunas de las comprobaciones con html5 ya que este lenguaje las trae incorporadas
+            indico un ejemplo de comprobación de dni y movil como yo lo haría a continuación, ambas opciones son 100% validas
+
+            <input id="dni" name="dni" type="text" placeholder="DNI" required maxlength="9" pattern="(\d{8})([A-Za-z]{1})" title="Ejemplo 12345678A"  onkeyup="this.value = this.value.toUpperCase();">
+            <input id="movil" name="movil" type="tel" placeholder="Móvil" required maxlength="9" minlength="9" pattern="(6|7)(\d{8})" title="Los teléfonos móviles aceptados empiezan por 6 ó 7 y cuentan con 9 números"  />
+
+            como se puede observar usaria required y pattern en html5
+
+            He dejado type email porque es recomendable usar los tipos de input correctamente para que google los identifique
+         -->
+        <br>
+        <input id="btnEnviar" class="btnEnviar" type="submit">
+        <p class="respuesta">
+
+        <p>
+    </form>
+
+    <script src="assets/js/jquery-3.4.1.min.js">
+    </script>
+    <script src="assets/js/enviar.js"></script>
+</section>
+{% endblock %}
