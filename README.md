@@ -42,7 +42,7 @@ $capsule->addConnection([
 ]);
 ```
 
-_Para terminar la configuración, en este mismo archivo index los router están preparados para una carpeta local llamada bvirtual así que cambia esta por el nombre de carpeta que desees darle o si lo incluyes en directorio raíz o producción puedes quitar bvirtual_
+_En este mismo archivo index los router están preparados para una carpeta local llamada bvirtual así que cambia esta por el nombre de carpeta que desees darle o si lo incluyes en directorio raíz o producción puedes quitar bvirtual_
 
 ```
 $routerContainer = new RouterContainer();
@@ -59,6 +59,34 @@ $map->post('guardarContacto', '/bvirtual/guardarContacto',[
     'controller' => 'App\Controllers\ContactosController',
     'action' => 'guardarContacto'
 ]);
+```
+
+_Configurar los htacces, estos archivos git no me los permite subir así los escribo abajo tal cual indicando las rutas_
+
+_Carpeta raíz .htaccess_
+
+```
+RewriteEngine On
+RewriteCond %{THE_REQUEST} /public/([^\s?]*) [NC]
+RewriteRule ^%1 [L,ne,r=301]
+RewriteRule ^((?!public/).*)$ public/$1 [L,NC]
+```
+
+_Carpeta public .htaccess_
+
+```
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [QSA,L]
+```
+
+_Carpeta assets .htaccess_
+
+```
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ ../index.php [QSA,L]
 ```
 
 ## Construido con 🛠️
