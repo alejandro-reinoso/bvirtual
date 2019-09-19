@@ -103,10 +103,6 @@ _Esta aplicación ha sido creada utilizando HTML, PHP, JS (Jquery) y se han impl
 
 * **Alejandro Reinoso Gómez** - *Desarrollador full stack* - reinosogomezalejandro@gmail.com - 627 083 106
 
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
 ## Expresiones de Gratitud 🎁
 
 * Gracias por considerarme para el puesto.
