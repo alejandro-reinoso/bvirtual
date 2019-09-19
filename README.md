@@ -6,6 +6,7 @@ _Esta es la aplicación web que me han solicitado en la prueba técnica de bvirt
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
+Mirar **Instalación** para conocer como desplegar el proyecto.
 
 ### Pre-requisitos 📋
 
@@ -100,7 +101,7 @@ _Esta aplicación ha sido creada utilizando HTML, PHP, JS (Jquery) y se han impl
 
 ## Autor ✒️
 
-* **Alejandro Reinoso Gómez** - *Desarrollador full stack* - reinosogomezalejandro@gmail.com
+* **Alejandro Reinoso Gómez** - *Desarrollador full stack* - reinosogomezalejandro@gmail.com - 627 083 106
 
 ## Licencia 📄
 
