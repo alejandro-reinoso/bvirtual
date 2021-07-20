@@ -1,6 +1,8 @@
-# Prueba BVirtual
+# Prueba Técnica
 
-_Esta es la aplicación web que me han solicitado en la prueba técnica de bvirtual, cuenta con un formulario para insertar usuarios o contactos según como los quieran denominar._
+_Esta es la aplicación web es el resultado de una prueba técnica desarrollada a bvirtual, cuenta con un formulario para insertar usuarios o contactos según como los quieran denominar._
+
+_Esta es una solución valida a la prueba pero no la única, de hecho hay formas más rápidas de llegar al mismo resultado sin necesidad de utilizar tantas librerías, pero bajo mi pensamiento me parece una manera interesante de reflejar mis conocimientos aportando una solución escalable a un proyecto con mayor embergadura y robusted._
 
 ## Comenzando 🚀
 
